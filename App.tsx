@@ -45,6 +45,9 @@ const App = () => {
         </View>
     );
   }
+
+  // The view around the camera isn't needed. The bug will still occur if that is not present. I added it so you can see
+  // that the parent is still rendering where you would expect.
   return (
       <View style={{flex: 1}}>
         <View style={styles.header} />
